@@ -1,5 +1,5 @@
 const PER_ROW = 25;
-const SNAKE_SPEED = .75;
+const SNAKE_SPEED = 0.75;
 const INITIAL_LENGTH = 1;
 
 let DIRECTION = "right";
@@ -21,6 +21,8 @@ const generateRandomColor = () =>
 
 const setDirection = (direction) => (DIRECTION = direction);
 
+const resetDirection = () => (DIRECTION = "right");
+
 const setGameStatus = (status) => (GAME_STATUS = status);
 
 export {
@@ -29,6 +31,7 @@ export {
   PER_ROW,
   SNAKE_SPEED,
   INITIAL_LENGTH,
+  resetDirection,
   setDirection,
   setGameStatus,
   generateRandomColor,

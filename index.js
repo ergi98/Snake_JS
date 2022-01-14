@@ -1,4 +1,9 @@
-import { SNAKE_SPEED, GAME_STATUS, setGameStatus } from "./constants.js";
+import {
+  SNAKE_SPEED,
+  GAME_STATUS,
+  setGameStatus,
+  resetDirection,
+} from "./constants.js";
 
 // Score
 import { placeScoreBoard, draw as drawScoreBoard } from "./score.js";
@@ -166,6 +171,7 @@ function restartGame() {
   placeMap();
   resetFruits();
   placeScoreBoard();
+  resetDirection();
   startGame();
 }
 
